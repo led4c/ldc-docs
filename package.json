@@ -1,0 +1,31 @@
+{
+	"name": "ldc-docs",
+	"version": "1.0.0",
+	"description": "LDC Documentation Website",
+	"author": "led4c",
+	"license": "MIT",
+	"main": "index.js",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "vitepress dev docs",
+		"build": "vitepress build docs",
+		"preview": "vitepress preview docs"
+	},
+	"keywords": [
+		"LDC",
+		"LED4C"
+	],
+	"devDependencies": {
+		"vitepress": "1.0.0-rc.24"
+	},
+	"packageManager": "pnpm@8.9.2",
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"@algolia/client-search",
+				"search-insights"
+			]
+		}
+	}
+}
